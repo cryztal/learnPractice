@@ -1,0 +1,11 @@
+commit 2004122d03898f07ea3e4541d8a6e50af59af5fc
+Author: cryztal <cryztal134@gmail.com>
+Date:   Tue Feb 11 10:11:48 2020 +0300
+
+    INIT COMMIT
+
+commit 9249c6d7a3d6fedd81f2eb9b53ce84da54432a7f
+Author: cryztal <cryztal134@gmail.com>
+Date:   Tue Feb 11 10:08:56 2020 +0300
+
+    add .gitignore
