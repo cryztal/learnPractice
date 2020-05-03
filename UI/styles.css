@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  transition: all 0.3s linear;
 }
 html,
 body {
@@ -11,6 +12,9 @@ body {
   display: flex;
   flex-direction: column;
   font-family: 'Raleway', sans-serif;
+}
+.hidden{
+  font-size: 0;
 }
 a{
   text-decoration: none;
@@ -67,7 +71,7 @@ nav{
 .mw100 {
   max-width: 100%;
 }
-.advantages__container {
+.advantages-container {
   display: flex;
   justify-content: center;
 }
@@ -80,20 +84,20 @@ nav{
   text-align: center;
   flex-wrap: wrap;
 }
-.advantages__item {
+.advantages-item {
   margin: 0 auto;
   width: 30%;
   height: auto;
 }
-.advantages__item img{
+.advantages-item img{
   width: 100px;
   height: 100px;
   border-radius: 30%;
 }
-.advantages__item h2{
+.advantages-item h2{
   flex-wrap: wrap;
 }
-.advantages__item p{
+.advantages-item p{
   flex-wrap: wrap;
 }
 main{
@@ -112,6 +116,12 @@ footer p{
 }
 footer a{
   color: white;
+}
+.load {
+  width: 100%;
+}
+.load a{
+  color: #000000;
 }
 .blog-container{
   background-attachment: #fafafa;
@@ -157,6 +167,7 @@ footer a{
 .blog-tags a{
   border: 1px solid #999999;
   border-radius: 3px;
+  color: #999999;
   font-size: .75rem;
   height: 1.5rem;
   line-height: 1.5rem;
@@ -168,7 +179,6 @@ footer a{
   width: 5rem;
 }
 .blog-footer ul{
-  list-style: none;
   display: flex;
   flex: row wrap;
   justify-content: flex-end;
@@ -256,7 +266,7 @@ textarea{
   background-color: #fbfbfb;
   transition: .3s easy;
 }
-.like-toggle.basic2{
+.like-toggle{
   border: none;
   width: 30px;
   height: 30px;
@@ -267,13 +277,18 @@ textarea{
   margin-bottom: 30px;
 }
 
-.like-active.basic2{
+.like-active{
   background: #F06EA9;
+  border: none;
+  width: 30px;
+  height: 30px;
+  font-size: 1.3em;
+  border-radius: 100px;
+  color: #fff;
+  margin-bottom: 30px;
 }
-
-.like-toggle.basic2:not(.like-active):hover{
-  background: #438CCA;
-  width: 60px;
+.like-toggle:focus{
+  outline: none;
 }
 .profile-change-container{
   display: flex;
@@ -408,15 +423,7 @@ textarea{
     right: 0;
     top: 0;
   }
-  .advantages__item {
-    width: 45%;
-  }
-}
-@media screen and (max-width: 420px){
-  .advantages {
-    flex-direction: column;
-  }
-  .advantages__item {
+  .advantages-item {
     width: 100%;
   }
 }

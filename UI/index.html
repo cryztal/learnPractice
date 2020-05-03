@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <script src="js/script.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script  src="./js/script.js"></script>
   </head>
   <body>
     <header>
@@ -13,19 +15,19 @@
           <a href="index.html"><img class="graficlogo" src="images/twitter.svg" alt="logo"></a>
         </div>
         <nav>
-          <div class="topnav" id="mytopnav">
+          <div class="topnav">
             <a href="myprofile.html">MY PROFILE</a>
             <a href="signin.html">LOG OUT</a>
             <a id="menu" href="#" class="icon">&#9776;</a>
         </nav>
-        <div class="filter" id="filtr">
+        <form class="filter" id="filtr">
           <input type="text" class="log-input" placeholder="FILTER">
-        </div>
+        </form>
     </header>
     <main>
-      <div class="advantages__container">
+      <div class="advantages-container">
         <div class="advantages">
-          <div class="advantages__item">
+          <div class="advantages-item">
              <a href="myprofile.html"><img src="images/bojack.jpg" alt=""></a>
              <div class="blog-text">
                <p>Жизнь — это череда закрывающихся дверей.</p>
@@ -44,12 +46,12 @@
                  <li class="published-date">4 days ago</li>
                </ul>
                <div class='like'>
-                 <button class='like-toggle basic2'> ♥</button>
-                 <span class='hidden'>I like this</span>
+                 <button class='like-toggle' name="like"> ♥</button>
+                 <a>10 likes</a>
                </div>
            </div>
           </div>
-          <div class="advantages__item">
+          <div class="advantages-item">
              <a href="myprofile.html"><img src="images/diane.jpg" alt=""></a>
              <div class="blog-text">
                <p>Lorem ipsum dolor sit amet.</p>
@@ -68,12 +70,12 @@
                  <li class="published-date">4 days ago</li>
                </ul>
                <div class='like'>
-                 <button class='like-toggle basic2'> ♥</button>
-                 <span class='hidden'>I like this</span>
+                 <button class='like-toggle' name="like"> ♥</button>
+                 <a>10 likes</a>
                </div>
            </div>
           </div>
-          <div class="advantages__item">
+          <div class="advantages-item">
              <a href="myprofile.html"><img src="images/caroline.jpg" alt=""></a>
              <div class="blog-text">
                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, id. Expedita earum eveniet consequatur! Corporis molestiae a nemo enim, aperiam.</p>
@@ -92,12 +94,12 @@
                  <li class="published-date">4 days ago</li>
                </ul>
                <div class='like'>
-                 <button class='like-toggle basic2'> ♥</button>
-                 <span class='hidden'>I like this</span>
+                 <button class='like-toggle' name="like"> ♥</button>
+                 <a>10 likes</a>
                </div>
            </div>
           </div>
-          <div class="advantages__item">
+          <div class="advantages-item">
              <a href="myprofile.html"><img src="images/todd.jpg" alt=""></a>
              <div class="blog-text">
                <p>Ищу работу</p>
@@ -116,12 +118,12 @@
                  <li class="published-date">4 days ago</li>
                </ul>
                <div class='like'>
-                 <button class='like-toggle basic2'> ♥</button>
-                 <span class='hidden'>I like this</span>
+                 <button class='like-toggle' name="like"> ♥</button>
+                 <a>10 likes</a>
                </div>
            </div>
           </div>
-          <div class="advantages__item">
+          <div class="advantages-item">
              <a href="myprofile.html"><img src="images/peanutbutter.jpg" alt=""></a>
              <div class="blog-text">
                <p>Гав-гав</p>
@@ -140,12 +142,12 @@
                  <li class="published-date">4 days ago</li>
                </ul>
                <div class='like'>
-                 <button class='like-toggle basic2'> ♥</button>
-                 <span class='hidden'>I like this</span>
+                 <button class='like-toggle' name="like"> ♥</button>
+                 <a>10 likes</a>
                </div>
            </div>
           </div>
-          <div class="advantages__item">
+          <div class="advantages-item">
              <a href="myprofile.html"><img src="images/bojack.jpg" alt=""></a>
              <div class="blog-text">
                <p>Lorem ipsum dolor.</p>
@@ -164,12 +166,12 @@
                  <li class="published-date">4 days ago</li>
                </ul>
                <div class='like'>
-                 <button class='like-toggle basic2'> ♥</button>
-                 <span class='hidden'>I like this</span>
+                 <button class='like-toggle' name="like"> ♥</button>
+                 <a>10 likes</a>
                </div>
            </div>
           </div>
-          <div class="advantages__item">
+          <div class="advantages-item">
              <a href="myprofile.html"><img src="images/caroline.jpg" alt=""></a>
              <div class="blog-text">
                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse, sunt sed beatae veniam, atque, voluptatum facere laboriosam eos sit ad. Quis facere sunt minima, quisquam iusto cum sint quos voluptatibus! Vel omnis nulla blanditiis, delectus! Quasi, veritatis blanditiis quisquam.</p>
@@ -188,12 +190,12 @@
                  <li class="published-date">4 days ago</li>
                </ul>
                <div class='like'>
-                 <button class='like-toggle basic2'> ♥</button>
-                 <span class='hidden'>I like this</span>
+                 <button class='like-toggle' name="like"> ♥</button>
+                 <a>10 likes</a>
                </div>
            </div>
           </div>
-          <div class="advantages__item">
+          <div class="advantages-item">
              <a href="myprofile.html"><img src="images/diane.jpg" alt=""></a>
              <div class="blog-text">
                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat repellat nihil officia, nostrum. Omnis, enim.</p>
@@ -212,12 +214,12 @@
                  <li class="published-date">4 days ago</li>
                </ul>
                <div class='like'>
-                 <button class='like-toggle basic2'> ♥</button>
-                 <span class='hidden'>I like this</span>
+                 <button class='like-toggle' name="like"> ♥</button>
+                 <a>10 likes</a>
                </div>
            </div>
           </div>
-          <div class="advantages__item">
+          <div class="advantages-item">
              <a href="myprofile.html"><img src="images/todd.jpg" alt=""></a>
              <div class="blog-text">
                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium.</p>
@@ -236,12 +238,12 @@
                  <li class="published-date">4 days ago</li>
                </ul>
                <div class='like'>
-                 <button class='like-toggle basic2'> ♥</button>
-                 <span class='hidden'>I like this</span>
+                 <button class='like-toggle' name="like"> ♥</button>
+                 <a>10 likes</a>
                </div>
            </div>
           </div>
-          <div class="advantages__item">
+          <div class="advantages-item">
              <a href="myprofile.html"><img src="images/bojack.jpg" alt=""></a>
              <div class="blog-text">
                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem praesentium dolore enim quisquam, commodi natus soluta explicabo dolorum voluptatum. Culpa fugiat tenetur esse in, et repellat id, rem architecto quos eum dolorum.</p>
@@ -260,8 +262,8 @@
                  <li class="published-date">4 days ago</li>
                </ul>
                <div class='like'>
-                 <button class='like-toggle basic2'> ♥</button>
-                 <span class='hidden'>I like this</span>
+                 <button class='like-toggle' name="like"> ♥</button>
+                 <a>10 likes</a>
                </div>
            </div>
           </div>
