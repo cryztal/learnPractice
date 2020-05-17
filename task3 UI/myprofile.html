@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MY PROFILE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+        <div class="logo">
+          <a href="index.html"><img class="graficlogo" src="images/twitter.svg" alt="logo"></a>
+        </div>
+        <nav>
+          <div class="topnav" id="mytopnav">
+            <a href="index.html">FEED</a>
+            <a href="archive.html">ARCHIVE</a>
+            <a href="signin.html">LOG OUT</a>
+            <a id="menu" href="#" class="icon">&#9776;</a>
+        </nav>
+    </header>
+    <main>
+      <div class="profile-change-container">
+        <div class="profile-changes">
+          <div class="profile-change-item">
+            <img src="images/bojack.jpg" alt="">
+            <div class="attach">
+              <div class="form-group">
+                <label class="label">
+                  <i class="material-icons">attach_file</i>
+                  <span class="title">UPLOAD IMAGE</span>
+                  <input type="file" accept="image/*">
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="profile-change-item">
+            <p><input type="text" name="name" class="change-input" placeholder="INPUT NEW NAME" id="name"></p>
+            <input type="submit" value="CHANGE" class="button-change">
+          </div>
+          <div class="profile-change-item">
+            <p><input type="email" name="email" class="change-input" placeholder="INPUT NEW EMAIL" id="email"></p>
+            <input type="submit" value="CHANGE" class="button-change">
+          </div>
+          <div class="profile-change-item">
+            <p><input type="password" name="password" class="change-input" placeholder="INPUT NEW PASSWORD" id="password"></p>
+            <input type="submit" value="CHANGE" class="button-change">
+          </div>
+        </div>
+      </div>
+      <div class="new-post">
+        <h1>ADD NEW POST</h1>
+      <form class="form">
+        <div class="new-post-input-lines">
+          <p><input type="text" name="tags" class="log-input" placeholder="TAGS" id="tags"></p>
+          <p><textarea name="text" class="log-input" id="comment" placeholder="Message"></textarea></p>
+        </div>
+        <div class="attach">
+          <div class="form-group">
+            <label class="label">
+              <i class="material-icons">attach_file</i>
+              <span class="title">UPLOAD IMAGE</span>
+              <input type="file" accept="image/*">
+            </label>
+          </div>
+        </div>
+      </form>
+      <input type="submit" value="ADD POST" class="button-submit">
+    </div>
+    </main>
+
+    <footer id="footer">
+        <p>
+            maksim lapo, 2 course, 8 group <br>
+            <a class="clickable" href="mailto:lappo.maks@gmail.com">
+                lappo.maks@gmail.com</a>
+        </p>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

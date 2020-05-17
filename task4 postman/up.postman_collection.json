@@ -1,0 +1,318 @@
+{
+	"info": {
+		"_postman_id": "0792637f-7521-4141-8a96-64a8ec9b8276",
+		"name": "up",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "punkapi1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.punkapi.com/v2/beers?brewed_before=11-2018&abv_gt=6&brewed_after=11-2015",
+					"protocol": "https",
+					"host": [
+						"api",
+						"punkapi",
+						"com"
+					],
+					"path": [
+						"v2",
+						"beers"
+					],
+					"query": [
+						{
+							"key": "brewed_before",
+							"value": "11-2018"
+						},
+						{
+							"key": "abv_gt",
+							"value": "6"
+						},
+						{
+							"key": "brewed_after",
+							"value": "11-2015"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "punkapi2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.punkapi.com/v2/beers?brewed_before=11-2018&abv_gt=6&brewed_after=11-2015&ibu_gt=100",
+					"protocol": "https",
+					"host": [
+						"api",
+						"punkapi",
+						"com"
+					],
+					"path": [
+						"v2",
+						"beers"
+					],
+					"query": [
+						{
+							"key": "brewed_before",
+							"value": "11-2018"
+						},
+						{
+							"key": "abv_gt",
+							"value": "6"
+						},
+						{
+							"key": "brewed_after",
+							"value": "11-2015"
+						},
+						{
+							"key": "ibu_gt",
+							"value": "100"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "punkapi3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.punkapi.com/v2/beers?brewed_before=11-2018&beer_name=ale",
+					"protocol": "https",
+					"host": [
+						"api",
+						"punkapi",
+						"com"
+					],
+					"path": [
+						"v2",
+						"beers"
+					],
+					"query": [
+						{
+							"key": "brewed_before",
+							"value": "11-2018"
+						},
+						{
+							"key": "beer_name",
+							"value": "ale"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "joke1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://official-joke-api.appspot.com/random_joke",
+					"protocol": "https",
+					"host": [
+						"official-joke-api",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"random_joke"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "joke2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://official-joke-api.appspot.com/jokes/programming/random",
+					"protocol": "https",
+					"host": [
+						"official-joke-api",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"jokes",
+						"programming",
+						"random"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "joke3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://official-joke-api.appspot.com/jokes/ten",
+					"protocol": "https",
+					"host": [
+						"official-joke-api",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"jokes",
+						"ten"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "newton1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newton.now.sh/factor/x^2-1",
+					"protocol": "https",
+					"host": [
+						"newton",
+						"now",
+						"sh"
+					],
+					"path": [
+						"factor",
+						"x^2-1"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "newton2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newton.now.sh/simplify/2^2+2(2) \t",
+					"protocol": "https",
+					"host": [
+						"newton",
+						"now",
+						"sh"
+					],
+					"path": [
+						"simplify",
+						"2^2+2(2) \t"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "newton3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newton.now.sh/cos/pi",
+					"protocol": "https",
+					"host": [
+						"newton",
+						"now",
+						"sh"
+					],
+					"path": [
+						"cos",
+						"pi"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api.postcodes.io/postcodes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"geolocations\" : \r\n\t[\r\n\t\t{\r\n\t\t\t\"longitude\":  0.629834723775309,\r\n\t\t\t\"latitude\": 51.7923246977375\r\n\t\t}, \r\n\t\t{\r\n\t\t\t\"longitude\": -2.49690382054704,\r\n\t\t\t\"latitude\": 53.5351312861402,\r\n\t\t\t\"radius\": 1000,\r\n\t\t\t\"limit\": 5\r\n\t\t}\r\n\t]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "api.postcodes.io/postcodes",
+					"host": [
+						"api",
+						"postcodes",
+						"io"
+					],
+					"path": [
+						"postcodes"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
