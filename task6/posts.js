@@ -415,7 +415,7 @@ var posts = [
 
     function getPost(id) {
         let post = posts.find((item) => item.id === id);
-        if (post === 'undefined') {
+        if (!post) {
             console.log("post not finded");
             return false;
         }
@@ -428,7 +428,7 @@ var posts = [
             return false;
         }
         let check = getPost(post.id);
-        if (check === 'undefined') {
+        if (!check) {
             console.log('id is not original');
             return false;
         }
@@ -480,7 +480,7 @@ var posts = [
         resultPosts.sort(function (a, b) {
             return b.createdAt - a.createdAt;
         });
-        if (filterConfig === undefined) {
+        if (!filterConfig) {
             return resultPosts;
         }
 
