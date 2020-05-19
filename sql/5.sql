@@ -3,5 +3,4 @@ select name from
 (select user.name, count(*) as n from post
 inner join user
 on post.user_id = user.id
-group by user.name) as u
-where u.n>3;
+group by user.name having n>3) as u;

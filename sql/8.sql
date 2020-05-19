@@ -8,6 +8,15 @@ select name from
 (select name, day(created_at), count(*) as count from post
 inner join user
 on user.id = post.user_id
-where day(created_at) = day(now()) 
-group by name) as t1
-where t1.count>3;
+where post.created_at between curdate() and curdate() + 1 
+group by user.id having count(post.id) > 3)as t1;
+
+#old
+#select name from 
+#(select name, day(created_at), count(*) as count from post
+#inner join user
+#on user.id = post.user_id
+#where day(created_at) = day(now()) 
+#group by name) as t1
+#where t1.count>3;
+

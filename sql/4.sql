@@ -1,5 +1,8 @@
 #Task4 списка уникальных имен пользователей;
 #Оптимальный вариант
+select distinct * from user;
+
+
 select * from user
 group by name;
 
